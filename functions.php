@@ -1,4 +1,4 @@
-// Função para obter todos os tipos de produtos existentes
+// todos os tipos de produtos existentes
 function get_product_types() {
     $tipos = [];
     
@@ -23,7 +23,7 @@ function get_product_types() {
     return $tipos;
 }
 
-// Função para obter dados da tabela ACF
+// obter dados da tabela ACF
 function get_products_data() {
     $marcas = [];
     $contagem = [];
@@ -76,7 +76,7 @@ function get_products_data() {
     return ['marcas' => $marcas, 'contagem' => $contagem];
 }
 
-// E substitua a função get_product_results por esta:
+// resultados
 function get_product_results($tipos = [], $marca = 'todos', $modelo = 'todos', $ano = 'todos', $codigo = '', $numero_ate = '', $numero_bosch = '', $numero_varga = '', $numero_controil = '', $numero_fluidloc = '') {
     $args = [
         'post_type' => 'produtos',
@@ -183,7 +183,7 @@ function get_product_results($tipos = [], $marca = 'todos', $modelo = 'todos', $
 }
 
 
-// Modificar o shortcode produtos_filtro
+//shortcode
 function produtos_filtro_shortcode() {
     ob_start();
     
@@ -374,7 +374,6 @@ function produtos_filtro_shortcode() {
         color: #333;
     }
 
-    /* Existing product grid styles remain the same */
     </style>
 
     <div class="filters-container">
